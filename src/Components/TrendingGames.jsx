@@ -18,7 +18,10 @@ function TrendingGames({gameList}) {
         hover:scale-110 transition-all duration-300 ease-in-out cursor pointer'>
             <img src={item.background_image} 
             className='h-[270px] rounded-lg object-cover'/>
+             <div className=' p-2 h-[80px] w-full backdrop-blur-sm
+                bg-[#76a8f75e] rounded-b-xl bg-gradient-to-b'>
             <h2 className='dark:text-white p-2 text-[20px] font-bold'>{item.name}</h2>
+            </div>
        </div>
       ))}
     </div>

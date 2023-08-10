@@ -3,7 +3,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState,useContext,useEffect } from "react";
 import logo from "./../assets/images/logo.png";
-import { HiOutlineMagnifyingGlass, HiMoon, HiSun } from "react-icons/hi2";
 import { ThemeContext } from "../Context/ThemeContext";
 function Header() {
   const [toggle, setToggle] = useState(false);
@@ -14,10 +13,10 @@ function Header() {
   return (
     <div className="flex justify-between p-3 space-between">
       <img src={logo} width={60} height={60} />
-      <div className="text-[30px] font-bold dark:text-white text-align:centre ">
+      <div className="text-[30px] font-bold dark:text-white text-align:centre mt-3 ">
        Game Zone
       </div>
-      <div>
+      <div className='mt-3'>
         {theme=='light' ? (
           <HiMoon
             className="text-[35px] bg-slate-200 text-black p-1 rounded-full cursor pointer"
