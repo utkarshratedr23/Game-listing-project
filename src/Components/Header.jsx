@@ -3,6 +3,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState,useContext,useEffect } from "react";
 import logo from "./../assets/images/logo.png";
+import {  HiMoon, HiSun } from "react-icons/hi2";
 import { ThemeContext } from "../Context/ThemeContext";
 function Header() {
   const [toggle, setToggle] = useState(false);
